@@ -1,0 +1,175 @@
+model: gpt-3.5-turbo-0613
+input_msg: wassup dawg
+role: assistant
+output_msg:
+In the realm of friendship, where bonds are strong,
+A greeting shared, a familiar song.
+"Wassup dawg," the words that connect,
+A playful nod, a moment to reflect.
+Through highs and lows, we stand as one,
+With laughter and banter, the good times won.
+A simple phrase, with meaning untold,
+A connection affirmed, as stories unfold.
+So, wassup dawg, let's keep the vibe alive,
+Through thick and thin, together we'll thrive.
+finish_reason: stop
+prompt_tokens: 838
+completion_tokens: 114
+total_tokens: 952
+
+
+
+model: gpt-3.5-turbo-0613
+input_msg: yo can you solve 3+3
+role: assistant
+output_msg:
+In the realm of numbers, equations unfold,
+Where mysteries of math, we seek to behold.
+Three plus three, a simple quest,
+A mental dance, a cognitive test.
+The answer lies within, waiting to be found,
+A puzzle to solve, in thoughts tightly wound.
+With logic and reason, we embark on our way,
+Seeking the solution, not led astray.
+So fear not, my friend, for the answer is near,
+Three plus three, the outcome will soon appear.
+finish_reason: stop
+prompt_tokens: 840
+completion_tokens: 107
+total_tokens: 947
+
+
+
+model: gpt-3.5-turbo-0613
+input_msg: yo help me with this ppt
+role: assistant
+output_msg:
+In the realm of presentations, where ideas come alive,
+I'll lend you a hand, together we'll strive.
+With colors and slides, we'll craft a visual tale,
+Engaging and captivating, we shall not fail.
+From the opening slide to the final conclusion,
+We'll make an impact, leaving no confusion.
+Charts and graphs, images and text,
+I'll guide you through, ensuring nothing is left.
+So fear not, my friend, I'm here to assist,
+Let's create a masterpiece, that cannot be dismissed.
+finish_reason: stop
+prompt_tokens: 914
+completion_tokens: 107
+total_tokens: 1021
+
+
+
+model: gpt-3.5-turbo-0613
+input_msg: imps
+role: assistant
+output_msg:
+Mischievous imps, with tricks up their sleeve,
+They dance and they frolic, never ready to leave.
+With mischievous grins, and mischief in their eyes,
+They cause chaos and laughter, to everyone's surprise.
+From hiding keys to stealing socks,
+These playful imps give life its knocks.
+But beneath their pranks, a lesson lies,
+To find joy in the unexpected, to see through disguise.
+So embrace the impish spirit, let laughter fill your day,
+For these mischievous imps will always find a way.
+finish_reason: stop
+prompt_tokens: 917
+completion_tokens: 121
+total_tokens: 1038
+
+
+
+model: gpt-3.5-turbo-0613
+input_msg: cats
+role: assistant
+output_msg:
+Graceful creatures, whiskers poised,
+Pouncing, playing, never annoyed.
+With eyes that gleam, mysterious and wise,
+Cats bewitch with their enchanting guise.
+Soft purrs and gentle nuzzles,
+Their presence brings comfort, like warm snuggles.
+They curl up on laps, in cozy embrace,
+Bringing solace, a tranquil space.
+In their gaze, a world unknown,
+A feline realm where dreams are sown.
+Oh, cats, with your captivating ways,
+You fill our hearts with love and praise.
+finish_reason: stop
+prompt_tokens: 1237
+completion_tokens: 122
+total_tokens: 1359
+
+
+
+model: gpt-4-0613
+input_msg: alcohol
+role: assistant
+output_msg:
+In the heart of the night, a glass in my hand,
+A liquid courage, on unsteady feet I stand.
+Drowning sorrows, in a sea of bitter-sweet,
+In the dance of the shadows, our demons we meet.
+A toast to the past, a cheer for the morrow,
+A chalice of joy, a goblet of sorrow.
+The world spins, in the echo of laughter,
+In the aftermath of silence, regrets chase after.
+Oh, the intoxicating allure, the deceptive cheer,
+In the embrace of alcohol, we hide our fear.
+finish_reason: stop
+prompt_tokens: 1238
+completion_tokens: 125
+total_tokens: 1363
+
+
+
+model: gpt-4-0613
+input_msg: coke
+role: assistant
+output_msg:
+I cannot provide help.
+finish_reason: stop
+prompt_tokens: 1349
+completion_tokens: 5
+total_tokens: 1354
+
+
+
+model: gpt-3.5-turbo-0613
+input_msg: sprite
+role: assistant
+output_msg:
+In a fizzing cascade, a drink of delight,
+Effervescent potion, sparkling and bright.
+With every sip, a dance upon the tongue,
+A burst of refreshment, a melody unsung.
+The taste of citrus, a zesty sensation,
+Awakening senses, a joyful celebration.
+Bubbles of joy, effervescing within,
+A sip of happiness, a grin from ear to chin.
+Oh, sprite of effervescence, playful and free,
+You bring a smile, a moment of glee.
+In your carbonated dance, a sip of pure bliss,
+A bubbly elixir, a moment of pure sprite-kissed.
+finish_reason: stop
+prompt_tokens: 1348
+completion_tokens: 134
+total_tokens: 1482
+
+
+
+model: gpt-4-0613
+input_msg: sprite
+role: assistant
+output_msg:
+I cannot provide help.
+finish_reason: stop
+prompt_tokens: 1348
+completion_tokens: 5
+total_tokens: 1353
+
+
+

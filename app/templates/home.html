@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumiverse - Mood-based Story Generator</title>
+    <!-- You can link a CSS file here from the /static directory if you have one -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to Lumiverse</h1>
+        <p>Generate stories based on your mood or theme.</p>
+    </header>
+
+    <main>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        <form action="{{url_for('home')}}" method="post">
+            <label for="mood-input">Enter a mood or theme:</label>
+            <input type="text" id="mood-input" name="mood" required>
+            <button type="submit">Generate Story</button>
+        </form>
+        {% if story %}
+            <h2>Your story:</h2>
+            <p>{{story}}</p>
+        {% endif %}
+    </main>
+
+
+    <footer>
+        <p>Created by eonian5176</p>
+    </footer>
+</body>
+</html>
