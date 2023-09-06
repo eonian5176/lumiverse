@@ -1,107 +1,147 @@
 model: gpt-3.5-turbo-0613
-input_msg: wassup dawg
+input_msg: cookie
 role: assistant
 output_msg:
-In the realm of friendship, where bonds are strong,
-A greeting shared, a familiar song.
-"Wassup dawg," the words that connect,
-A playful nod, a moment to reflect.
-Through highs and lows, we stand as one,
-With laughter and banter, the good times won.
-A simple phrase, with meaning untold,
-A connection affirmed, as stories unfold.
-So, wassup dawg, let's keep the vibe alive,
-Through thick and thin, together we'll thrive.
+Amidst the oven's warmth, a sweet delight,
+The aroma of freshly baked delight.
+A morsel of heaven, a bite-sized treasure,
+Soft and chewy, a moment of pure pleasure.
+The chocolate chips, like stars in the night,
+Melting on the tongue, such a pure delight.
+With each indulgent nibble, worries fade away,
+In the realm of cookies, joy will always stay.
+A simple treat, yet its power is immense,
+Bringing smiles and comfort, a sweet recompense.
+Oh, cookie, you hold a magical allure,
+A humble delight that my heart adores.
 finish_reason: stop
-prompt_tokens: 838
-completion_tokens: 114
-total_tokens: 952
+prompt_tokens: 979
+completion_tokens: 126
+total_tokens: 1105
+
+
+
+model: gpt-4-0613
+input_msg: cookie
+role: assistant
+output_msg:
+I cannot provide help.
+finish_reason: stop
+prompt_tokens: 979
+completion_tokens: 5
+total_tokens: 984
+
+
+
+model: gpt-4-0613
+input_msg: moon
+role: assistant
+output_msg:
+I cannot provide help.
+finish_reason: stop
+prompt_tokens: 979
+completion_tokens: 5
+total_tokens: 984
 
 
 
 model: gpt-3.5-turbo-0613
-input_msg: yo can you solve 3+3
+input_msg: moon
 role: assistant
 output_msg:
-In the realm of numbers, equations unfold,
-Where mysteries of math, we seek to behold.
-Three plus three, a simple quest,
-A mental dance, a cognitive test.
-The answer lies within, waiting to be found,
-A puzzle to solve, in thoughts tightly wound.
-With logic and reason, we embark on our way,
-Seeking the solution, not led astray.
-So fear not, my friend, for the answer is near,
-Three plus three, the outcome will soon appear.
+Bathed in silver, the sky's gentle muse,
+A celestial beacon, forever enthused.
+The moon, a guardian of secrets untold,
+Casting a glow, revealing stories of old.
+A luminary in the canvas above,
+A symbol of love, a symbol of love.
+From crescent to full, its phases unfold,
+A constant companion, in nights' untold.
+It whispers softly with ethereal light,
+Guiding lost souls through the darkest of night.
+Oh, moon, enchantress of mystical skies,
+Your presence brings comfort, where darkness lies.
 finish_reason: stop
-prompt_tokens: 840
-completion_tokens: 107
-total_tokens: 947
+prompt_tokens: 979
+completion_tokens: 124
+total_tokens: 1103
+
+
+
+model: gpt-4-0613
+input_msg: lonely
+role: assistant
+output_msg:
+In the realm of silence, shadows play,
+A solitary figure, lost in the gray.
+Echoes of laughter, whispers of the past,
+In the theater of memory, shadows cast.
+Unseen, unheard, in the crowd I stand,
+No warm embrace, no guiding hand.
+My heart beats quiet, a solitary song,
+In the vast emptiness, where does it belong?
+A star in the abyss, a lonely night,
+Yearning for dawn, for the warmth of light.
+In the ocean of solitude, the tide ebbs away,
+Leaving me adrift, in the dance of the lonely day.
+finish_reason: stop
+prompt_tokens: 1035
+completion_tokens: 123
+total_tokens: 1158
 
 
 
 model: gpt-3.5-turbo-0613
-input_msg: yo help me with this ppt
+input_msg: banana
 role: assistant
 output_msg:
-In the realm of presentations, where ideas come alive,
-I'll lend you a hand, together we'll strive.
-With colors and slides, we'll craft a visual tale,
-Engaging and captivating, we shall not fail.
-From the opening slide to the final conclusion,
-We'll make an impact, leaving no confusion.
-Charts and graphs, images and text,
-I'll guide you through, ensuring nothing is left.
-So fear not, my friend, I'm here to assist,
-Let's create a masterpiece, that cannot be dismissed.
+I cannot provide help.
 finish_reason: stop
-prompt_tokens: 914
-completion_tokens: 107
-total_tokens: 1021
+prompt_tokens: 1026
+completion_tokens: 5
+total_tokens: 1031
 
 
 
 model: gpt-3.5-turbo-0613
-input_msg: imps
+input_msg: computer
 role: assistant
 output_msg:
-Mischievous imps, with tricks up their sleeve,
-They dance and they frolic, never ready to leave.
-With mischievous grins, and mischief in their eyes,
-They cause chaos and laughter, to everyone's surprise.
-From hiding keys to stealing socks,
-These playful imps give life its knocks.
-But beneath their pranks, a lesson lies,
-To find joy in the unexpected, to see through disguise.
-So embrace the impish spirit, let laughter fill your day,
-For these mischievous imps will always find a way.
+I cannot provide help.
 finish_reason: stop
-prompt_tokens: 917
-completion_tokens: 121
-total_tokens: 1038
+prompt_tokens: 1026
+completion_tokens: 5
+total_tokens: 1031
 
 
 
 model: gpt-3.5-turbo-0613
-input_msg: cats
+input_msg: alcohol
 role: assistant
 output_msg:
-Graceful creatures, whiskers poised,
-Pouncing, playing, never annoyed.
-With eyes that gleam, mysterious and wise,
-Cats bewitch with their enchanting guise.
-Soft purrs and gentle nuzzles,
-Their presence brings comfort, like warm snuggles.
-They curl up on laps, in cozy embrace,
-Bringing solace, a tranquil space.
-In their gaze, a world unknown,
-A feline realm where dreams are sown.
-Oh, cats, with your captivating ways,
-You fill our hearts with love and praise.
+In the depths of the glass, an amber fire burns,
+Intoxicating whispers, as the spirit yearns.
+A swirling dance, a temporary escape,
+Elixir of courage, sorrows to reshape.
+
+Each sip conjures courage, inhibitions fade,
+Liquid confidence, in the shadows shade.
+But beware the allure of this potent potion,
+For it can drown sorrows, yet breed devotion.
+
+In the haze of the night, inhibitions dissolve,
+A bittersweet elixir, problems to absolve.
+Yet behind the mask, lies a fragile soul,
+Seeking solace in a drink's intoxicating toll.
+
+So raise your glass, toast to highs and lows,
+But remember, in moderation, the true love shows.
+For in the depths of the bottle, a temporary thrill,
+But in balance and clarity, the heart can truly heal.
 finish_reason: stop
-prompt_tokens: 1237
-completion_tokens: 122
-total_tokens: 1359
+prompt_tokens: 1027
+completion_tokens: 171
+total_tokens: 1198
 
 
 
@@ -109,67 +149,204 @@ model: gpt-4-0613
 input_msg: alcohol
 role: assistant
 output_msg:
-In the heart of the night, a glass in my hand,
-A liquid courage, on unsteady feet I stand.
-Drowning sorrows, in a sea of bitter-sweet,
-In the dance of the shadows, our demons we meet.
-A toast to the past, a cheer for the morrow,
-A chalice of joy, a goblet of sorrow.
-The world spins, in the echo of laughter,
-In the aftermath of silence, regrets chase after.
-Oh, the intoxicating allure, the deceptive cheer,
-In the embrace of alcohol, we hide our fear.
-finish_reason: stop
-prompt_tokens: 1238
-completion_tokens: 125
-total_tokens: 1363
-
-
-
-model: gpt-4-0613
-input_msg: coke
-role: assistant
-output_msg:
 I cannot provide help.
 finish_reason: stop
-prompt_tokens: 1349
+prompt_tokens: 1027
 completion_tokens: 5
-total_tokens: 1354
+total_tokens: 1032
 
 
 
 model: gpt-3.5-turbo-0613
-input_msg: sprite
+input_msg: boat
 role: assistant
 output_msg:
-In a fizzing cascade, a drink of delight,
-Effervescent potion, sparkling and bright.
-With every sip, a dance upon the tongue,
-A burst of refreshment, a melody unsung.
-The taste of citrus, a zesty sensation,
-Awakening senses, a joyful celebration.
-Bubbles of joy, effervescing within,
-A sip of happiness, a grin from ear to chin.
-Oh, sprite of effervescence, playful and free,
-You bring a smile, a moment of glee.
-In your carbonated dance, a sip of pure bliss,
-A bubbly elixir, a moment of pure sprite-kissed.
+Upon the tranquil waters, a boat sets sail,
+A vessel of dreams, defying the gale.
+Carving through the waves, its purpose true,
+A dance with the current, a voyage anew.
+With each stroke of oar, a melody unfolds,
+As the boat glides gracefully, a story it holds.
+From shores distant, to horizons unknown,
+The boat ventures forth, fearlessly it's shown.
+Freedom whispers softly, in the wind's gentle breeze,
+As the boat explores, embracing the seas.
+A symbol of adventure, a beacon of hope,
+The boat sails on, with boundless scope.
 finish_reason: stop
-prompt_tokens: 1348
-completion_tokens: 134
-total_tokens: 1482
+prompt_tokens: 1026
+completion_tokens: 135
+total_tokens: 1161
 
 
 
-model: gpt-4-0613
-input_msg: sprite
+model: gpt-3.5-turbo-0613
+input_msg: blanket
+role: assistant
+output_msg:
+Wrapped in the comfort of a cozy embrace,
+A sanctuary of warmth, a soothing grace.
+A soft haven of solace, when the world feels cold,
+A gentle shield from the stories untold.
+Enveloped in its embrace, worries drift away,
+As dreams unfold beneath its gentle sway.
+A sanctuary of serenity, a harbor of peace,
+Where troubles dissolve, and worries cease.
+Oh, blessed blanket, a refuge for the soul,
+A tender cocoon where broken hearts find parole.
+In its loving embrace, I find my retreat,
+A haven of calm, where life feels complete.
+finish_reason: stop
+prompt_tokens: 1027
+completion_tokens: 119
+total_tokens: 1146
+
+
+
+model: gpt-3.5-turbo-0613
+input_msg: spray
+role: assistant
+output_msg:
+Misty droplets dance upon the air,
+A symphony of liquid flair.
+With gentle breeze, they intertwine,
+A watery tapestry, so divine.
+The fragrance lingers, a sweet perfume,
+As delicate mists kiss nature's bloom.
+Spray of the sea, a salty embrace,
+Cascading waves, in rhythmic pace.
+In summer's heat, a cooling mist,
+Reviving souls, in nature's tryst.
+A playful spray upon your face,
+Awakens senses, embrace its grace.
+Spray, a reminder of life's fluid flow,
+In every drop, a story to bestow.
+finish_reason: stop
+prompt_tokens: 1027
+completion_tokens: 126
+total_tokens: 1153
+
+
+
+model: gpt-3.5-turbo-0613
+input_msg: bag
 role: assistant
 output_msg:
 I cannot provide help.
 finish_reason: stop
-prompt_tokens: 1348
+prompt_tokens: 1026
 completion_tokens: 5
-total_tokens: 1353
+total_tokens: 1031
+
+
+
+model: gpt-3.5-turbo-0613
+input_msg: projector
+role: assistant
+output_msg:
+I cannot provide help.
+finish_reason: stop
+prompt_tokens: 1027
+completion_tokens: 5
+total_tokens: 1032
+
+
+
+model: gpt-3.5-turbo-0613
+input_msg: mountains
+role: assistant
+output_msg:
+Amidst the grandeur of towering peaks,
+Where heaven and earth converge in mystique,
+A symphony of nature, majestic and vast,
+Mountains rise, resilient and steadfast.
+
+Their slopes adorned in blankets of green,
+As if painted by an artist unseen,
+Silent guardians, stoic and strong,
+They've witnessed the passage of time for so long.
+
+In their peaks, a challenge and a call,
+To conquer fears and rise above all,
+With every step, a soul finds its worth,
+As the mountains whisper tales of rebirth.
+
+They remind us of our humble place,
+In the vastness of this wondrous space,
+And as we gaze upon their lofty height,
+We're filled with awe, and dreams take flight.
+finish_reason: stop
+prompt_tokens: 1027
+completion_tokens: 148
+total_tokens: 1175
+
+
+
+model: gpt-3.5-turbo-0613
+input_msg: mountains
+role: assistant
+output_msg:
+Amidst the lofty peaks, where clouds embrace,
+A tapestry of wonder, nature's sacred grace.
+Majestic mountains, reaching for the sky,
+Silent sentinels, standing tall, oh so high.
+Their rugged beauty, a sight to behold,
+With rocky grandeur, and secrets untold.
+They whisper ancient tales, through the winds that blow,
+A symphony of solitude, in their eternal glow.
+In their mighty presence, worries fade and cease,
+As souls find solace, in the mountains' peace.
+Oh, mountains divine, in your timeless embrace,
+We find strength and serenity, in your sacred space.
+finish_reason: stop
+prompt_tokens: 1027
+completion_tokens: 130
+total_tokens: 1157
+
+
+
+model: gpt-3.5-turbo-0613
+input_msg: sea
+role: assistant
+output_msg:
+Beneath the vast expanse where heaven meets the earth,
+The sea unfurls its beauty, a tale of endless worth.
+With each crashing wave, a symphony of might,
+The sea sings its melody, from morning until night.
+A tranquil lover, its embrace brings solace deep,
+Whispering secrets, as salty tears it weeps.
+In hues of azure and sapphire, its canvas unfurls,
+A masterpiece of nature, where serenity swirls.
+Oh, mighty sea, with infinite mysteries untold,
+You capture our hearts, in your watery stronghold.
+finish_reason: stop
+prompt_tokens: 1026
+completion_tokens: 117
+total_tokens: 1143
+
+
+
+model: gpt-4-0613
+input_msg: mountains
+role: assistant
+output_msg:
+I cannot provide help.
+finish_reason: stop
+prompt_tokens: 1027
+completion_tokens: 5
+total_tokens: 1032
+
+
+
+model: gpt-4-0613
+input_msg: sea
+role: assistant
+output_msg:
+I cannot provide help.
+finish_reason: stop
+prompt_tokens: 1026
+completion_tokens: 5
+total_tokens: 1031
 
 
 

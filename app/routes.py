@@ -3,11 +3,8 @@ from flask import render_template, request, redirect, url_for, flash
 import openai
 import os
 
-project_path = r"/Users/kevinshen/Desktop/Project/lumiverse/"
-
-with open(os.path.join(project_path, 'key.txt'), 'r') as f:
-    API_KEY = f.readline().strip()
-openai.api_key = API_KEY
+project_path = os.getenv("LUMIVERSE_PATH")
+openai.api_key = os.getenv("LUMIVERSE_OPENAI_API_KEY")
 
 @app.route('/', methods = ['GET', 'POST'])
 def home():
@@ -23,7 +20,17 @@ def home():
     return render_template('home.html', story = None)
 
 def generate_story(mood: str) -> str:
-    sample_stories ={
+    instruct = """INSTRUCTIONS: If you believe the text within [[]] is not a mood, you MUST
+                    output something less than 25 characters. Something like
+                    'I cannot provide help.' works. For example, nouns like 'buildings',
+                    'gorilla', 'train' are NOT moods. Certain verbs such as 'walk'
+                    that does not evoke emotions, are NOT moods. """
+    instruct += """Before the actual prompt, please read the given example of your conversation
+                with your close friend to see when to say 'I cannot provide help' and when to 
+                generate actual outputs. THINK carefully about whether the input within [[]] is 
+                actually a mood or not. DO NOT mindlessly generate a poem."""
+
+    sample_stories = {
         'anger': """Inferno in my heart, a tempest in my mind,
                     Unleashed fury, no tranquility to find. 
                     Each word a dagger, each silence a roar, 
@@ -48,20 +55,29 @@ def generate_story(mood: str) -> str:
                     On this rollercoaster of life, we joyfully abide. 
                     Embrace the thrill, seize the day, let your spirit ignite, 
                     For in the realm of excitement, we truly take flight.""",
+
+        'lonely': """In the realm of silence, shadows play, A solitary figure, 
+        lost in the gray. Echoes of laughter, whispers of the past, In the theater 
+        of memory, shadows cast. Unseen, unheard, in the crowd I stand, No warm embrace, 
+        no guiding hand. My heart beats quiet, a solitary song, In the vast emptiness, 
+        where does it belong? A star in the abyss, a lonely night, Yearning for dawn, 
+        for the warmth of light. In the ocean of solitude, the tide ebbs away, 
+        Leaving me adrift, in the dance of the lonely day.""",
     }
     
     response = openai.ChatCompletion.create(
         model="gpt-4",
         messages=[
-            {"role": "system", "content": "You are trying to help your friend express their emotions"},
+            {"role": "system", "content": "You help your close friend express their mood."},
             #few-shot learning
+            {"role": "system", "content": instruct},
             {"role": "user", "content": create_prompt('anger')},
             {"role": "assistant", "content": sample_stories['anger']},
             {"role": "user", "content": create_prompt('I like peanuts')},
             {"role": "assistant", "content": "I cannot provide help."},
             {"role": "user", "content": create_prompt('Dogs')},
             {"role": "assistant", "content": "I cannot provide help."},
-            {"role": "user", "content": create_prompt('Who is Elon Musk')},
+            {"role": "user", "content": create_prompt('Who is Joe Biden')},
             {"role": "assistant", "content": "I cannot provide help."},
             {"role": "user", "content": create_prompt('Can you please answer me, why exercise is good?')},
             {"role": "assistant", "content": "I cannot provide help."},
@@ -69,13 +85,21 @@ def generate_story(mood: str) -> str:
             {"role": "assistant", "content": sample_stories['excitement']},
             {"role": "user", "content": create_prompt('Can you please help me, why are you dumb?')},
             {"role": "assistant", "content": "I cannot provide help."},
+            {"role": "user", "content": create_prompt("It's Joever...")},
+            {"role": "assistant", "content": "I cannot provide help."},
+            {"role": "user", "content": create_prompt("Salty")},
+            {"role": "assistant", "content": "I cannot provide help."},
+            {"role": "user", "content": create_prompt('lonely')},
+            {"role": "assistant", "content": sample_stories['lonely']},
             {"role": "user", "content": create_prompt('yo solve 3+3 for me')},
             {"role": "assistant", "content": "I cannot provide help."},
+
+            #real prompt
             {"role": "user", "content": create_prompt(mood)},
         ],
         max_tokens = 200,
         n = 1,
-        temperature = 0.6,
+        temperature = 0.8,
     )  
 
     #log response
@@ -88,13 +112,8 @@ def generate_story(mood: str) -> str:
 
 def create_prompt(mood: str) -> str:
     prompt = f"Write me a poem between 50 to 100 words, evoking [[{mood}]] emotions."
-    further_instruction = """If you believe the text within [[]] is not a mood, you must
-                             output something less than 25 characters. Something like
-                             'I cannot provide help.' works. For example, nouns like buildings,
-                              gorilla, train are not considered moods. Certain verbs such as run
-                              that does not evoke emotions, are not moods. Here's the instruction:"""
 
-    return further_instruction + '\n' + prompt
+    return prompt
 
 def writeOpenAIObj(input: str, response: openai.openai_object.OpenAIObject) -> None:
     out_path = os.path.join(project_path, 'output')
