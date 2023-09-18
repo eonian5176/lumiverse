@@ -3,7 +3,7 @@ from flask import render_template, request, redirect, url_for, flash
 import openai
 import os
 
-project_path = os.getenv("LUMIVERSE_PATH")
+project_path = os.getenv("LUMIVERSE_PATH") or ''
 openai.api_key = os.getenv("LUMIVERSE_OPENAI_API_KEY")
 
 @app.route('/', methods = ['GET', 'POST'])
