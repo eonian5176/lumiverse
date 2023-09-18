@@ -66,7 +66,7 @@ def generate_story(mood: str) -> str:
     }
     
     response = openai.ChatCompletion.create(
-        model="gpt-4",
+        model="gpt-3.5",
         messages=[
             {"role": "system", "content": "You help your close friend express their mood."},
             #few-shot learning
